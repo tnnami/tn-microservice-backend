@@ -20,9 +20,11 @@ public class Reservation {
 	
 	@Id
 	private Long Id;
-	private String emailUser;
+	private String reservationIssuerEmail;
 	private Soccerfield soccerField;
 	private Boolean state;
-	private Date date;
+	private Date startDate;
+	private Date endDate;
+	private String teamId;
 
 }

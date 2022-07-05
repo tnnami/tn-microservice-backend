@@ -7,6 +7,8 @@ import com.reservationMicroService.entities.Reservation;
 import com.reservationMicroService.repositories.ReservationRepository;
 import com.reservationMicroService.repositories.SoccerfieldRepository;
 
+import java.util.List;
+
 @Service
 public class ReservationService {
 	
@@ -15,7 +17,11 @@ public class ReservationService {
 	@Autowired
 	private ReservationRepository reservationRepository;
 	
-	
+
+
+	public List<Reservation> getReservations(){
+		return reservationRepository.findAll();
+	}
 	public void addReservation(Reservation reservation) {	
 		
 		reservationRepository.save(reservation);
