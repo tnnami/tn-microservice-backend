@@ -17,7 +17,7 @@ import lombok.Setter;
 public class Soccerfield {
 	
 	@Id
-	private Long id;
+	private String idSoccerfield;
 	
 	
 	private String name;

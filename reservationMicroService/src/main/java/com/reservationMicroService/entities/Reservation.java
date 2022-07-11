@@ -19,7 +19,7 @@ import lombok.Setter;
 public class Reservation {
 	
 	@Id
-	private Long Id;
+	private String idReservation;
 	private String reservationIssuerEmail;
 	private Soccerfield soccerField;
 	private Boolean state;
